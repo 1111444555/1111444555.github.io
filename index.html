@@ -31,29 +31,44 @@
 <body>
     <div class="container">
         <div class="video">
-            <iframe width="848" height="478" src="https://suprememastertv.com/radio/?autoplay=1" title="Supreme Master TV Radio" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen autoplay muted></iframe>
+            <iframe src="https://suprememastertv.com/radio/?autoplay=1&mute=1" title="Supreme Master TV Radio" frameborder="0"
+                allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
         <div class="video">
-            <iframe width="848" height="478" src="https://suprememastertv.com/radio/?autoplay=1" title="Supreme Master TV Radio" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen autoplay muted></iframe>
+            <iframe src="https://suprememastertv.com/radio/?autoplay=1&mute=1" title="Supreme Master TV Radio" frameborder="0"
+                allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
         <div class="video">
-            <iframe width="848" height="478" src="https://suprememastertv.com/radio/?autoplay=1" title="Supreme Master TV Radio" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen autoplay muted></iframe>
+            <iframe src="https://suprememastertv.com/radio/?autoplay=1&mute=1" title="Supreme Master TV Radio" frameborder="0"
+                allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
         <div class="video">
-            <iframe width="848" height="478" src="https://suprememastertv.com/radio/?autoplay=1" title="Supreme Master TV Radio" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            ></iframe>
+            <iframe src="https://suprememastertv.com/radio/?autoplay=1&mute=1" title="Supreme Master TV Radio" frameborder="0"
+                allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
-
-
-</div>
     </div>
+
+    <script>
+        // Ensure autoplay works by calling play() on the frames after they load
+        function playAudioInIframes() {
+            // Get all iframe elements
+            const iframes = document.querySelectorAll('iframe');
+            
+            // Iterate over each iframe and try to play it
+            iframes.forEach(iframe => {
+                // Access the iframe's contentWindow and try to play the audio inside
+                const player = iframe.contentWindow;
+                
+                // Try to send play command via postMessage (works for cross-origin if supported)
+                if (player) {
+                    player.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
+                }
+            });
+        }
+
+        // Wait for the page to load, then attempt to play all media
+        window.onload = playAudioInIframes;
+    </script>
 </body>
 
 </html>
