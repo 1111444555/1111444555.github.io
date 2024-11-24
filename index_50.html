@@ -1,0 +1,276 @@
+<html>
+
+<head>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .video {
+            overflow: hidden;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Add this CSS rule to set the opacity for the last three videos */
+        .video:nth-child(n+1) iframe {
+            opacity: 0.011;
+        }
+
+        #play-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="play-button">Play 4 Audio</button>
+    <p>
+        Tim Quo Tu
+    </p>
+    <br>
+    <p>
+        Tim Quo Tu
+    </p>
+    <p>
+        Tim Quo Tu
+    </p>   
+    <div class="container">
+        <div class="video"><iframe width="848" height="478" id="iframe1" src="https://www.youtube.com/embed/ZzWBpGwKoaI"
+                title="SupremeMasterTV Live (Full HD, 1080p)" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe></div>
+        <div class="video"><iframe width="848" height="478" id="iframe2" src="https://www.youtube.com/embed/ZzWBpGwKoaI"
+                title="SupremeMasterTV Live (Full HD, 1080p)" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe></div>
+        <div class="video"><iframe width="848" height="478" id="iframe3" src="https://www.youtube.com/embed/ZzWBpGwKoaI"
+                title="SupremeMasterTV Live (Full HD, 1080p)" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe></div>
+        <div class="video"><iframe width="848" height="478" id="iframe4" src="https://www.youtube.com/embed/ZzWBpGwKoaI"
+                title="SupremeMasterTV Live (Full HD, 1080p)" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe></div>
+              <div class="video"><iframe width="848" height="478" id="iframe1" src="https://www.youtube.com/embed/ZzWBpGwKoaI"
+                title="SupremeMasterTV Live (Full HD, 1080p)" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe></div>
+        <div class="video"><iframe width="848" height="478" id="iframe2" src="https://www.youtube.com/embed/ZzWBpGwKoaI"
+                title="SupremeMasterTV Live (Full HD, 1080p)" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe></div>
+        <div class="video"><iframe width="848" height="478" id="iframe3" src="https://www.youtube.com/embed/ZzWBpGwKoaI"
+                title="SupremeMasterTV Live (Full HD, 1080p)" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe></div>
+        <div class="video"><iframe width="848" height="478" id="iframe4" src="https://www.youtube.com/embed/ZzWBpGwKoaI"
+                title="SupremeMasterTV Live (Full HD, 1080p)" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe></div>
+        <div class="video"><iframe width="848" height="478" id="iframe3" src="https://www.youtube.com/embed/ZzWBpGwKoaI"
+                title="SupremeMasterTV Live (Full HD, 1080p)" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe></div>
+        <div class="video"><iframe width="848" height="478" id="iframe4" src="https://www.youtube.com/embed/ZzWBpGwKoaI"
+                title="SupremeMasterTV Live (Full HD, 1080p)" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe></div>
+              <div class="video"><iframe width="848" height="478" id="iframe1" src="https://www.youtube.com/embed/ZzWBpGwKoaI"
+                title="SupremeMasterTV Live (Full HD, 1080p)" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe></div>
+        <div class="video"><iframe width="848" height="478" id="iframe2" src="https://www.youtube.com/embed/ZzWBpGwKoaI"
+                title="SupremeMasterTV Live (Full HD, 1080p)" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe></div>
+        <div class="video"><iframe width="848" height="478" id="iframe3" src="https://www.youtube.com/embed/ZzWBpGwKoaI"
+                title="SupremeMasterTV Live (Full HD, 1080p)" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe></div>
+        <div class="video"><iframe width="848" height="478" id="iframe4" src="https://www.youtube.com/embed/ZzWBpGwKoaI"
+                title="SupremeMasterTV Live (Full HD, 1080p)" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe></div>
+              <div class="video"><iframe width="848" height="478" id="iframe1" src="https://www.youtube.com/embed/ZzWBpGwKoaI"
+                title="SupremeMasterTV Live (Full HD, 1080p)" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe></div>
+        <div class="video"><iframe width="848" height="478" id="iframe2" src="https://www.youtube.com/embed/ZzWBpGwKoaI"
+                title="SupremeMasterTV Live (Full HD, 1080p)" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe></div>
+        <div class="video"><iframe width="848" height="478" id="iframe3" src="https://www.youtube.com/embed/ZzWBpGwKoaI"
+                title="SupremeMasterTV Live (Full HD, 1080p)" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe></div>
+        <div class="video"><iframe width="848" height="478" id="iframe4" src="https://www.youtube.com/embed/ZzWBpGwKoaI"
+                title="SupremeMasterTV Live (Full HD, 1080p)" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe></div>
+        <div class="video"><iframe width="848" height="478" id="iframe3" src="https://www.youtube.com/embed/ZzWBpGwKoaI"
+                title="SupremeMasterTV Live (Full HD, 1080p)" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe></div>
+        <div class="video"><iframe width="848" height="478" id="iframe4" src="https://www.youtube.com/embed/ZzWBpGwKoaI"
+                title="SupremeMasterTV Live (Full HD, 1080p)" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe></div>
+              <div class="video"><iframe width="848" height="478" id="iframe1" src="https://www.youtube.com/embed/ZzWBpGwKoaI"
+                title="SupremeMasterTV Live (Full HD, 1080p)" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe></div>
+        <div class="video"><iframe width="848" height="478" id="iframe2" src="https://www.youtube.com/embed/ZzWBpGwKoaI"
+                title="SupremeMasterTV Live (Full HD, 1080p)" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe></div>
+        <div class="video"><iframe width="848" height="478" id="iframe3" src="https://www.youtube.com/embed/ZzWBpGwKoaI"
+                title="SupremeMasterTV Live (Full HD, 1080p)" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe></div>
+        <div class="video"><iframe width="848" height="478" id="iframe4" src="https://www.youtube.com/embed/ZzWBpGwKoaI"
+                title="SupremeMasterTV Live (Full HD, 1080p)" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe></div>
+              <div class="video"><iframe width="848" height="478" id="iframe1" src="https://www.youtube.com/embed/ZzWBpGwKoaI"
+                title="SupremeMasterTV Live (Full HD, 1080p)" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe></div>
+        <div class="video"><iframe width="848" height="478" id="iframe2" src="https://www.youtube.com/embed/ZzWBpGwKoaI"
+                title="SupremeMasterTV Live (Full HD, 1080p)" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe></div>
+        <div class="video"><iframe width="848" height="478" id="iframe3" src="https://www.youtube.com/embed/ZzWBpGwKoaI"
+                title="SupremeMasterTV Live (Full HD, 1080p)" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe></div>
+        <div class="video"><iframe width="848" height="478" id="iframe4" src="https://www.youtube.com/embed/ZzWBpGwKoaI"
+                title="SupremeMasterTV Live (Full HD, 1080p)" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe></div>
+        <div class="video"><iframe width="848" height="478" id="iframe3" src="https://www.youtube.com/embed/ZzWBpGwKoaI"
+                title="SupremeMasterTV Live (Full HD, 1080p)" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe></div>
+        <div class="video"><iframe width="848" height="478" id="iframe4" src="https://www.youtube.com/embed/ZzWBpGwKoaI"
+                title="SupremeMasterTV Live (Full HD, 1080p)" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe></div>
+              <div class="video"><iframe width="848" height="478" id="iframe1" src="https://www.youtube.com/embed/ZzWBpGwKoaI"
+                title="SupremeMasterTV Live (Full HD, 1080p)" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe></div>
+        <div class="video"><iframe width="848" height="478" id="iframe2" src="https://www.youtube.com/embed/ZzWBpGwKoaI"
+                title="SupremeMasterTV Live (Full HD, 1080p)" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe></div>
+        <div class="video"><iframe width="848" height="478" id="iframe3" src="https://www.youtube.com/embed/ZzWBpGwKoaI"
+                title="SupremeMasterTV Live (Full HD, 1080p)" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe></div>
+        <div class="video"><iframe width="848" height="478" id="iframe4" src="https://www.youtube.com/embed/ZzWBpGwKoaI"
+                title="SupremeMasterTV Live (Full HD, 1080p)" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe></div>
+              <div class="video"><iframe width="848" height="478" id="iframe1" src="https://www.youtube.com/embed/ZzWBpGwKoaI"
+                title="SupremeMasterTV Live (Full HD, 1080p)" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe></div>
+        <div class="video"><iframe width="848" height="478" id="iframe2" src="https://www.youtube.com/embed/ZzWBpGwKoaI"
+                title="SupremeMasterTV Live (Full HD, 1080p)" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe></div>
+        <div class="video"><iframe width="848" height="478" id="iframe3" src="https://www.youtube.com/embed/ZzWBpGwKoaI"
+                title="SupremeMasterTV Live (Full HD, 1080p)" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe></div>
+        <div class="video"><iframe width="848" height="478" id="iframe4" src="https://www.youtube.com/embed/ZzWBpGwKoaI"
+                title="SupremeMasterTV Live (Full HD, 1080p)" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe></div>
+        <div class="video"><iframe width="848" height="478" id="iframe3" src="https://www.youtube.com/embed/ZzWBpGwKoaI"
+                title="SupremeMasterTV Live (Full HD, 1080p)" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe></div>
+        <div class="video"><iframe width="848" height="478" id="iframe4" src="https://www.youtube.com/embed/ZzWBpGwKoaI"
+                title="SupremeMasterTV Live (Full HD, 1080p)" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe></div>
+              <div class="video"><iframe width="848" height="478" id="iframe1" src="https://www.youtube.com/embed/ZzWBpGwKoaI"
+                title="SupremeMasterTV Live (Full HD, 1080p)" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe></div>
+        <div class="video"><iframe width="848" height="478" id="iframe2" src="https://www.youtube.com/embed/ZzWBpGwKoaI"
+                title="SupremeMasterTV Live (Full HD, 1080p)" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe></div>
+        <div class="video"><iframe width="848" height="478" id="iframe3" src="https://www.youtube.com/embed/ZzWBpGwKoaI"
+                title="SupremeMasterTV Live (Full HD, 1080p)" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe></div>
+        <div class="video"><iframe width="848" height="478" id="iframe4" src="https://www.youtube.com/embed/ZzWBpGwKoaI"
+                title="SupremeMasterTV Live (Full HD, 1080p)" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe></div>
+              <div class="video"><iframe width="848" height="478" id="iframe1" src="https://www.youtube.com/embed/ZzWBpGwKoaI"
+                title="SupremeMasterTV Live (Full HD, 1080p)" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe></div>
+        <div class="video"><iframe width="848" height="478" id="iframe2" src="https://www.youtube.com/embed/ZzWBpGwKoaI"
+                title="SupremeMasterTV Live (Full HD, 1080p)" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe></div>
+        <div class="video"><iframe width="848" height="478" id="iframe3" src="https://www.youtube.com/embed/ZzWBpGwKoaI"
+                title="SupremeMasterTV Live (Full HD, 1080p)" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe></div>
+        <div class="video"><iframe width="848" height="478" id="iframe4" src="https://www.youtube.com/embed/ZzWBpGwKoaI"
+                title="SupremeMasterTV Live (Full HD, 1080p)" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe></div>
+        <div class="video"><iframe width="848" height="478" id="iframe3" src="https://www.youtube.com/embed/ZzWBpGwKoaI"
+                title="SupremeMasterTV Live (Full HD, 1080p)" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe></div>
+        <div class="video"><iframe width="848" height="478" id="iframe4" src="https://www.youtube.com/embed/ZzWBpGwKoaI"
+                title="SupremeMasterTV Live (Full HD, 1080p)" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe></div>
+    </div>
+    <script>
+        // Get the iframes and play button
+        var iframes = document.querySelectorAll('iframe');
+        var playButton = document.getElementById('play-button');
+
+        // Add an event listener to the play button
+        playButton.addEventListener('click', function() {
+            // Loop through the iframes and play the videos
+            iframes.forEach(function(iframe) {
+                iframe.src = iframe.src.replace(/(autoplay=0|autoplay=1|autoplay)/g, '') + '?autoplay=1';
+            });
+        });
+    </script>
+</body>
+
+</html>
